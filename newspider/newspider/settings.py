@@ -28,7 +28,10 @@ USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, li
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN=16
 #CONCURRENT_REQUESTS_PER_IP=16
+ITEM_PIPELINES = {'newspider.pipelines.NewspiderPipeline':300,}
 
+MONGO_URI = "127.0.0.1:27017"
+MONGO_DATABASE = "qiubai"
 # Disable cookies (enabled by default)
 #COOKIES_ENABLED=False
 
